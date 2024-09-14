@@ -25,6 +25,7 @@ public class BillResponse {
     private int accountId;
     private int totalAmount;
     private String note;
+    private String sendTo;
     private LoginResponDto user;
     private VoucherResponseBill voucherResponseBill;
     private List<FoodResponseBill> foodResponseBills;

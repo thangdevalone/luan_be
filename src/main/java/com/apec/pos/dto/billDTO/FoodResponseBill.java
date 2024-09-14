@@ -18,6 +18,7 @@ public class FoodResponseBill {
     private Integer priceFood;
     private Integer quantity;
     private String nameRes;
+    private String sendTo;
     private Integer resId;
     private List<Item> itemList;
     private String address;

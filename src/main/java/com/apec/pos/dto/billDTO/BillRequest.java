@@ -19,7 +19,7 @@ public class BillRequest {
     private int shipFee;
     private String codeVoucher;
     private String note;
-
+    private String sendTo;
     private List<BillFoodRequest> billFoodRequests;
 
 }
