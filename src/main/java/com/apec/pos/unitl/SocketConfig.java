@@ -37,8 +37,14 @@ public class SocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     @CrossOrigin
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        registry.addEndpoint("/ws-food")
-                .setAllowedOrigins("*")  // Chấp nhận yêu cầu từ tất cả các nguồn gốc
+        registry.addEndpoint("/ws-food").setAllowedOrigins(
+                        "http://127.0.0.1:5173",
+                        "http://localhost:5173",
+                        "https://thangdev.online",
+                        "http://127.0.0.1:5500",
+                        "https://food.labtlu.shop/",
+                        "https://admin.food.labtlu.shop/",
+                        "http://14.225.206.173:8081")
                 .withSockJS();
     }
 
