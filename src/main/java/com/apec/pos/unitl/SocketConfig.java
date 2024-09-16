@@ -38,7 +38,7 @@ public class SocketConfig implements WebSocketMessageBrokerConfigurer {
     @CrossOrigin
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/ws-food")
-                .setAllowedOriginPatterns("*")
+                .setAllowedOrigins("*")  // Chấp nhận yêu cầu từ tất cả các nguồn gốc
                 .withSockJS();
     }
 
